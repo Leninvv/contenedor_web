@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  asir_compose_apache:
+    image: httpd:latest
+    ports:
+    - 4200:80
+    volumes:
+    - ./htdocs:/usr/local/apache2/htdocs/
+    
